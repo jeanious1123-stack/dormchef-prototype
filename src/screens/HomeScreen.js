@@ -51,7 +51,7 @@ export default function HomeScreen() {
         {/* Welcome Card - KEPT EXACTLY AS REQUESTED */}
         <View style={styles.welcomeCard}>
           <Text style={styles.welcomeText}>
-            👋 <Text style={{fontWeight: 'bold'}}>Welcome to MealPal!</Text> Easy recipes for busy students with limited tools and budget. Let's cook something delicious!
+            <Text style={{fontWeight: 'bold'}}>Welcome to MealPal!</Text> Your cooking companion that finds recipes tailored to your ingredients, tools, and taste. Let's start cooking!
           </Text>
         </View>
 
