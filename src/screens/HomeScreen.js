@@ -39,7 +39,7 @@ export default function HomeScreen() {
         {/* Header Section */}
         <View style={styles.header}>
           <View>
-            <Text style={styles.brandName}>NAME OF THE APP</Text>
+            <Text style={styles.brandName}>MealPal</Text>
             <Text style={styles.tagline}>What's in your pantry?</Text>
           </View>
           <View style={styles.bookIconBox}>
@@ -51,7 +51,7 @@ export default function HomeScreen() {
         {/* Welcome Card - KEPT EXACTLY AS REQUESTED */}
         <View style={styles.welcomeCard}>
           <Text style={styles.welcomeText}>
-            👋 <Text style={{fontWeight: 'bold'}}>Welcome to Bestie Bites!</Text> Easy recipes for busy students with limited tools and budget. Let's cook something delicious!
+            👋 <Text style={{fontWeight: 'bold'}}>Welcome to MealPal!</Text> Easy recipes for busy students with limited tools and budget. Let's cook something delicious!
           </Text>
         </View>
 

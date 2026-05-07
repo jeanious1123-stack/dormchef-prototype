@@ -18,7 +18,14 @@ export default function StartScreen() {
 
       {/* Branding Section */}
       <View style={styles.textSection}>
-        <Text style={styles.appName}>NAME OF APP</Text>
+        <View style={styles.brandRow}>
+          <Image
+            source={require('../../assets/Logo.png')}
+            style={styles.logo}
+            resizeMode="contain"
+          />
+          <Text style={styles.appName}>MealPal</Text>
+        </View>
         <Text style={styles.tagline}>
           We make use of what's already{"\n"}in your pantry.
         </Text>
@@ -40,6 +47,8 @@ const styles = StyleSheet.create({
   imageContainer: { flex: 2, justifyContent: 'center', alignItems: 'center' },
   illustration: { width: '100%', height: '80%' },
   textSection: { flex: 1, alignItems: 'center' },
+  brandRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', marginBottom: 6 },
+  logo: { width: 48, height: 48, marginRight: 12 },
   appName: { fontSize: 42, fontWeight: '900', color: '#000', textAlign: 'center' },
   tagline: { fontSize: 18, fontWeight: '700', color: '#000', textAlign: 'center', marginTop: 10 },
   startBtn: { backgroundColor: '#FFB300', height: 65, borderRadius: 15, justifyContent: 'center', alignItems: 'center', marginBottom: 20 },
