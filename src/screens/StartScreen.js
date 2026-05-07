@@ -18,9 +18,6 @@ export default function StartScreen() {
 
       {/* Branding Section */}
       <View style={styles.textSection}>
-        <Text style={styles.tagline}>
-          We make use of what's already{"\n"}in your pantry.
-        </Text>
       </View>
 
       {/* Action Button */}
@@ -43,6 +40,6 @@ const styles = StyleSheet.create({
   logo: { width: 48, height: 48, marginRight: 12 },
   appName: { fontSize: 42, fontWeight: '900', color: '#000', textAlign: 'center' },
   tagline: { fontSize: 18, fontWeight: '700', color: '#000', textAlign: 'center', marginTop: 10 },
-  startBtn: { backgroundColor: '#FFB300', height: 65, borderRadius: 15, justifyContent: 'center', alignItems: 'center', marginBottom: 20 },
-  startBtnText: { fontSize: 22, fontWeight: '900', color: '#000' }
+  startBtn: { backgroundColor: '#FFB300', height: 50, borderRadius: 15, justifyContent: 'center', alignItems: 'center', marginBottom: 20, paddingHorizontal: 40, alignSelf: 'center', minWidth: '50%' },
+  startBtnText: { fontSize: 16, fontWeight: '900', color: '#000' }
 });
