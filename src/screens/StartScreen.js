@@ -33,8 +33,8 @@ export default function StartScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#FFB300', padding: 30, justifyContent: 'space-between' },
   topSection: { alignItems: 'center', marginTop: 40 },
-  illustration: { width: 220, height: 220 },
-  tagline: { fontSize: 18, fontWeight: '700', color: '#000', textAlign: 'center', marginTop: 12 },
+  illustration: { width: 300, height: 300 },
+  tagline: { fontSize: 18, fontWeight: '700', color: '#000', textAlign: 'center', marginTop: 4 },
   startBtn: { backgroundColor: '#8BC34A', height: 44, borderRadius: 30, justifyContent: 'center', alignItems: 'center', marginBottom: 10, paddingHorizontal: 30, alignSelf: 'center', minWidth: '45%' },
   startBtnText: { fontSize: 13, fontWeight: '900', color: '#000' }
 });
