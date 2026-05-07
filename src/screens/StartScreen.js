@@ -36,9 +36,9 @@ export default function StartScreen() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#FFB300', padding: 30, paddingBottom: 30 },
-  imageContainer: { flex: 2, justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 0, marginBottom: 0 },
-  illustration: { width: '70%', height: '80%' },
-  textSection: { flex: 0.4, alignItems: 'center', justifyContent: 'flex-start', marginTop: -30 },
+  imageContainer: { justifyContent: 'center', alignItems: 'center' },
+  illustration: { width: '70%', height: 280 },
+  textSection: { alignItems: 'center', justifyContent: 'flex-start', marginTop: 8 },
   brandRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', marginBottom: 6 },
   logo: { width: 48, height: 48, marginRight: 12 },
   appName: { fontSize: 42, fontWeight: '900', color: '#000', textAlign: 'center' },
