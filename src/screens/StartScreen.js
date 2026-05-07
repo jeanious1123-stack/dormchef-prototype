@@ -7,23 +7,19 @@ export default function StartScreen() {
 
   return (
     <SafeAreaView style={styles.container}>
-      {/* Central Illustration Area */}
-      <View style={styles.imageContainer}>
+      {/* Logo + Tagline grouped at top */}
+      <View style={styles.topSection}>
         <Image 
           source={require('../../assets/Logo.png')}
           style={styles.illustration}
           resizeMode="contain"
         />
-      </View>
-
-      {/* Branding Section */}
-      <View style={styles.textSection}>
         <Text style={styles.tagline}>
           We make use of what's already{"\n"}in your pantry.
         </Text>
       </View>
 
-      {/* Action Button */}
+      {/* Action Button pinned at bottom */}
       <TouchableOpacity 
         style={styles.startBtn}
         onPress={() => navigation.navigate('Home')}
@@ -35,14 +31,10 @@ export default function StartScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#FFB300', padding: 30, paddingBottom: 30 },
-  imageContainer: { flex: 2, justifyContent: 'center', alignItems: 'center' },
-  illustration: { width: '70%', height: '80%' },
-  textSection: { alignItems: 'center', justifyContent: 'flex-start', marginTop: 8 },
-  brandRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', marginBottom: 6 },
-  logo: { width: 48, height: 48, marginRight: 12 },
-  appName: { fontSize: 42, fontWeight: '900', color: '#000', textAlign: 'center' },
-  tagline: { fontSize: 18, fontWeight: '700', color: '#000', textAlign: 'center', marginTop: 0 },
-  startBtn: { backgroundColor: '#8BC34A', height: 50, borderRadius: 15, justifyContent: 'center', alignItems: 'center', marginBottom: 20, paddingHorizontal: 40, alignSelf: 'center', minWidth: '50%' },
+  container: { flex: 1, backgroundColor: '#FFB300', padding: 30, justifyContent: 'space-between' },
+  topSection: { alignItems: 'center', marginTop: 40 },
+  illustration: { width: 220, height: 220 },
+  tagline: { fontSize: 18, fontWeight: '700', color: '#000', textAlign: 'center', marginTop: 12 },
+  startBtn: { backgroundColor: '#8BC34A', height: 55, borderRadius: 30, justifyContent: 'center', alignItems: 'center', marginBottom: 10, paddingHorizontal: 40 },
   startBtnText: { fontSize: 16, fontWeight: '900', color: '#000' }
 });
