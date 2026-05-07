@@ -32,7 +32,7 @@ export default function StartScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#FFFFFF', padding: 30 },
+  container: { flex: 1, backgroundColor: '#FFB300', padding: 30 },
   imageContainer: { flex: 2, justifyContent: 'center', alignItems: 'center' },
   illustration: { width: '70%', height: '80%' },
   textSection: { flex: 1, alignItems: 'center' },
