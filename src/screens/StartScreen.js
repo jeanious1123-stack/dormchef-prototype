@@ -35,6 +35,6 @@ const styles = StyleSheet.create({
   topSection: { alignItems: 'center', marginTop: 40 },
   illustration: { width: 220, height: 220 },
   tagline: { fontSize: 18, fontWeight: '700', color: '#000', textAlign: 'center', marginTop: 12 },
-  startBtn: { backgroundColor: '#8BC34A', height: 55, borderRadius: 30, justifyContent: 'center', alignItems: 'center', marginBottom: 10, paddingHorizontal: 40 },
-  startBtnText: { fontSize: 16, fontWeight: '900', color: '#000' }
+  startBtn: { backgroundColor: '#8BC34A', height: 44, borderRadius: 30, justifyContent: 'center', alignItems: 'center', marginBottom: 10, paddingHorizontal: 30, alignSelf: 'center', minWidth: '45%' },
+  startBtnText: { fontSize: 13, fontWeight: '900', color: '#000' }
 });
