@@ -40,6 +40,6 @@ const styles = StyleSheet.create({
   logo: { width: 48, height: 48, marginRight: 12 },
   appName: { fontSize: 42, fontWeight: '900', color: '#000', textAlign: 'center' },
   tagline: { fontSize: 18, fontWeight: '700', color: '#000', textAlign: 'center', marginTop: 10 },
-  startBtn: { backgroundColor: '#FFB300', height: 50, borderRadius: 15, justifyContent: 'center', alignItems: 'center', marginBottom: 20, paddingHorizontal: 40, alignSelf: 'center', minWidth: '50%' },
+  startBtn: { backgroundColor: '#8BC34A', height: 50, borderRadius: 15, justifyContent: 'center', alignItems: 'center', marginBottom: 20, paddingHorizontal: 40, alignSelf: 'center', minWidth: '50%' },
   startBtnText: { fontSize: 16, fontWeight: '900', color: '#000' }
 });
