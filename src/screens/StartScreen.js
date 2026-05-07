@@ -18,9 +18,6 @@ export default function StartScreen() {
 
       {/* Branding Section */}
       <View style={styles.textSection}>
-        <View style={styles.brandRow}>
-          <Text style={styles.appName}>MealPal</Text>
-        </View>
         <Text style={styles.tagline}>
           We make use of what's already{"\n"}in your pantry.
         </Text>
