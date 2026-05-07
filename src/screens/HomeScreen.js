@@ -8,7 +8,8 @@ import {
   ScrollView, 
   StatusBar, 
   Alert,
-  Platform 
+  Platform,
+  Image
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context'; 
 import { useNavigation } from '@react-navigation/native';
@@ -38,9 +39,12 @@ export default function HomeScreen() {
         
         {/* Header Section */}
         <View style={styles.header}>
-          <View>
-            <Text style={styles.brandName}>MealPal</Text>
-            <Text style={styles.tagline}>What's in your pantry?</Text>
+          <View style={styles.brandRow}>
+            <Image source={require('../../assets/Logo.png')} style={styles.navLogo} resizeMode="contain" />
+            <View>
+              <Text style={styles.brandName}>MealPal</Text>
+              <Text style={styles.tagline}>What's in your pantry?</Text>
+            </View>
           </View>
           <View style={styles.bookIconBox}>
             {/* FIX: Removed fill property to stop the HostFunction error */}
@@ -115,7 +119,9 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#FFB300' },
   scrollContent: { padding: 20 },
-  header: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: 20 },
+  header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 },
+  brandRow: { flexDirection: 'row', alignItems: 'center' },
+  navLogo: { width: 40, height: 40, marginRight: 10 },
   brandName: { fontSize: 28, fontWeight: '900', color: '#000' },
   tagline: { fontSize: 14, fontWeight: '800', color: '#000' },
   bookIconBox: { backgroundColor: '#1B4D2E', padding: 8, borderRadius: 12 },
