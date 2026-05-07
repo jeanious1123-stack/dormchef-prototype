@@ -10,7 +10,7 @@ export default function StartScreen() {
       {/* Central Illustration Area */}
       <View style={styles.imageContainer}>
         <Image 
-          source={require('../../assets/sdsd.png')}
+          source={require('../../assets/Logo.png')}
           style={styles.illustration}
           resizeMode="contain"
         />
@@ -19,11 +19,6 @@ export default function StartScreen() {
       {/* Branding Section */}
       <View style={styles.textSection}>
         <View style={styles.brandRow}>
-          <Image
-            source={require('../../assets/Logo.png')}
-            style={styles.logo}
-            resizeMode="contain"
-          />
           <Text style={styles.appName}>MealPal</Text>
         </View>
         <Text style={styles.tagline}>
@@ -45,7 +40,7 @@ export default function StartScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#FDF5E6', padding: 30 },
   imageContainer: { flex: 2, justifyContent: 'center', alignItems: 'center' },
-  illustration: { width: '100%', height: '80%' },
+  illustration: { width: '70%', height: '80%' },
   textSection: { flex: 1, alignItems: 'center' },
   brandRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', marginBottom: 6 },
   logo: { width: 48, height: 48, marginRight: 12 },
