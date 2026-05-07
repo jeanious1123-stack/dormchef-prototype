@@ -18,6 +18,9 @@ export default function StartScreen() {
 
       {/* Branding Section */}
       <View style={styles.textSection}>
+        <Text style={styles.tagline}>
+          We make use of what's already{"\n"}in your pantry.
+        </Text>
       </View>
 
       {/* Action Button */}
@@ -35,7 +38,7 @@ const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#FFB300', padding: 30 },
   imageContainer: { flex: 2, justifyContent: 'center', alignItems: 'center' },
   illustration: { width: '70%', height: '80%' },
-  textSection: { flex: 1, alignItems: 'center' },
+  textSection: { flex: 0.4, alignItems: 'center', justifyContent: 'flex-start', marginTop: -10 },
   brandRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', marginBottom: 6 },
   logo: { width: 48, height: 48, marginRight: 12 },
   appName: { fontSize: 42, fontWeight: '900', color: '#000', textAlign: 'center' },
