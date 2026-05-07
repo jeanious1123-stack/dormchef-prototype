@@ -40,15 +40,11 @@ export default function HomeScreen() {
         {/* Header Section */}
         <View style={styles.header}>
           <View style={styles.brandRow}>
-            <Image source={require('../../assets/Logo.png')} style={styles.navLogo} resizeMode="contain" />
+            <Image source={require('../../assets/LogoCropped.png')} style={styles.navLogo} resizeMode="contain" />
             <View>
               <Text style={styles.brandName}>MealPal</Text>
               <Text style={styles.tagline}>What's in your pantry?</Text>
             </View>
-          </View>
-          <View style={styles.bookIconBox}>
-            {/* FIX: Removed fill property to stop the HostFunction error */}
-            <BookOpen color="#ffffff" size={24} strokeWidth={2.5} />
           </View>
         </View>
 
